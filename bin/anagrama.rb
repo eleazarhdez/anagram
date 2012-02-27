@@ -43,5 +43,5 @@ ARGV.each do |word|
   end
 end
 
-#aki es la segunda cosa ke se cambia
+
 
