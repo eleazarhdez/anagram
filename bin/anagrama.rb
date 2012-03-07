@@ -26,16 +26,16 @@ def signature_of(word)
 end
 
 
-signatures = Hash.new { |h,k| h[k] = [] }
-File.foreach(dictionary) do |line|
-  word = line.chomp
-  signature = signature_of(word)
-  signatures[signature] << word
+signatures = Hash.new { |h,k| h[k] = [] }		#cada elemento del hash si no esta inicializado se inicializa así, h= hash, k = key, si ta vacio el signature se pone a nil
+File.foreach(dictionary) do |line|			#
+  word = line.chomp								#chomp quita el retorno de carro final de la linea, solo el ultimo
+  signature = signature_of(word)				#
+  signatures[signature] << word				#claves son las palabras, y sus valores seran arrays que contienen todos los anagramas de esa palabra
 end
 
 
 ARGV.each do |word|
-  s = signature_of(word)
+  s = signature_of(word)						
   if signatures[s].length != 0
     puts "Anagrams of '#{word}': #{signatures[s].join(', ')}"
   else
