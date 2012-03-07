@@ -1,3 +1,4 @@
+#! /usr/bin/env ruby
 require 'test/unit'
 require 'shoulda'
 require_relative '../lib/anagram/finder'
