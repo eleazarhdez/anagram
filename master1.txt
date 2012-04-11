@@ -1,3 +1,0 @@
-ESte es un fichero que se
-esta desarrollando en la rama master
-tambien tiene su homólogo en la rama pruebita
