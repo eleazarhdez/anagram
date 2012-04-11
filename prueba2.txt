@@ -1,0 +1,3 @@
+este es el fichero 2 que esta en la rama
+prueba y no esta en la rama master para posteriormente
+hacer un merge-forward con un conflicto en el fichero README
