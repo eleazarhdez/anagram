@@ -1,0 +1,7 @@
+bin/anagram1.rb
+lib/anagram/options.rb
+MANIFEST
+Rakefile
+README
+test
+
